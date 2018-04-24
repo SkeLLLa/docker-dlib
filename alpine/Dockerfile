@@ -1,4 +1,4 @@
-FROM jeanblanchard/alpine-glibc:latest
+FROM frolvlad/alpine-glibc:latest
 
 ARG RUNTIME_DEPS='libpng libjpeg-turbo giflib openblas libx11'
 ARG BUILD_DEPS='wget unzip cmake build-base linux-headers libpng-dev libjpeg-turbo-dev giflib-dev openblas-dev libx11-dev'
