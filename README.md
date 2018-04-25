@@ -6,6 +6,10 @@ Docker image with compiled Dlib
 
 [![](https://images.microbadger.com/badges/version/m03geek/dlib:stretch.svg)](https://microbadger.com/images/m03geek/dlib:stretch "version")[![](https://images.microbadger.com/badges/image/m03geek/dlib:stretch.svg)](https://microbadger.com/images/m03geek/dlib:stretch "layers")
 
+# Versions (latest)
+
+* dlib - 19.8
+
 # Dlib
 
 Dlib is built from source. Latest git tag corresponds Dlib version.
