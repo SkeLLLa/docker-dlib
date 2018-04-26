@@ -11,8 +11,7 @@ ENV DLIB_VERSION=${VERSION} \
     DLIB_LIB_DIR='$LIB_PREFIX/lib'
 
 RUN echo "Dlib: ${DLIB_VERSION}" \
-    && echo "${LIB_PREFIX}/lib64" | cat - /usr/glibc-compat/etc/ld.so.conf > tmp.ld.conf \
-    && mv tmp.ld.conf /usr/glibc-compat/etc/ld.so.conf \
+    && rm -rf /usr/local/lib && ln -s /usr/local/lib64 /usr/local/lib \
     && apk add -u --no-cache --virtual .build-dependencies $BUILD_DEPS \
     && wget -q https://github.com/davisking/dlib/archive/v${DLIB_VERSION}.zip -O dlib.zip \
     && dlib_cmake_flags="-D CMAKE_BUILD_TYPE=RELEASE \
